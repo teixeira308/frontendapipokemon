@@ -1,0 +1,133 @@
+/* Estilo para o container dos cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilo para o card */
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+}
+
+/* Estilo para o ID */
+.card .id {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para o nome */
+.card .name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os atributos */
+.card .attributes {
+  margin-bottom: 10px;
+}
+
+/* Estilo para a data de criação */
+.card .createdAt {
+  color: #666;
+  font-size: 12px;
+}
+
+/* Estilo para o container do aplicativo */
+.app-container {
+  display: flex;
+  height: 100vh; /* Define a altura do aplicativo para preencher toda a altura da janela */
+}
+
+/* Estilo para o menu responsivo à esquerda */
+.menu {
+  flex: 0 0 auto; /* Permitir que o menu cresça conforme necessário */
+  background-color: #333; /* Cor de fundo do menu */
+  color: #fff; /* Cor do texto do menu */
+  padding: 20px; /* Espaçamento interno do menu */
+  
+}
+
+/* Estilo para o botão de menu */
+.menu .menu-toggle {
+  display: none; /* Oculta o botão de menu por padrão */
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media query para exibir o botão de menu em telas pequenas */
+@media screen and (max-width: 768px) {
+  .menu ul {
+      display: none; /* Oculta o menu normal em telas pequenas */
+  }
+
+  .menu .menu-toggle {
+      display: block; /* Exibe o botão de menu em telas pequenas */
+  }
+}
+
+
+/* Estilo para os itens de lista do menu */
+.menu ul {
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o espaçamento interno padrão da lista */
+}
+
+/* Estilo para os links do menu */
+.menu ul li a {
+  display: block; /* Transforma os links em blocos para preencher a largura total do contêiner */
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  padding: 10px 0; /* Espaçamento interno dos links */
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+/* Estilo para os links do menu ao passar o mouse */
+.menu ul li a:hover {
+  background-color: #555; /* Altera a cor de fundo ao passar o mouse sobre os links */
+}
+
+/* Estilo para o corpo principal */
+.main {
+  position: relative; /* Adiciona posição relativa para que o rodapé possa ser posicionado corretamente */
+  flex: 1; /* Ocupa todo o espaço restante no contêiner */
+  padding: 20px; /* Espaçamento interno do corpo principal */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  max-height: calc(100vh - 60px); /* Altura máxima da lista de Pokémon (altura da tela - altura do cabeçalho) */
+}
+
+/* Estilo para o rodapé */
+.footer {
+  position: fixed; /* Mantém o rodapé fixo na parte inferior da tela */
+  left: 0; /* Alinha o rodapé à esquerda da tela */
+  bottom: 0; /* Alinha o rodapé à parte inferior da tela */
+  width: 100%; /* Largura total do rodapé */
+  padding: 10px; /* Espaçamento interno do rodapé */
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+}
+
+/* Estilo para o cabeçalho */
+.header {
+  text-align: center; /* Centraliza o texto do cabeçalho */
+  margin-bottom: 20px; /* Espaçamento inferior do cabeçalho */
+}
+
+/* Estilo para os cards */
+.card {
+  background-color: #f0f0f0; /* Cor de fundo do card */
+  border: 1px solid #ccc; /* Borda do card */
+  border-radius: 8px; /* Borda arredondada do card */
+  padding: 20px; /* Espaçamento interno do card */
+  margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+}
+
+/* Estilo para o rodapé */
+
