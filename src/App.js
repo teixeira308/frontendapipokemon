@@ -218,7 +218,7 @@ function App() {
           </div>
         </div>
         <footer className="footer">
-          powered by ChatGPT
+          powered by Gui
         </footer>
       </div>
     </div>
