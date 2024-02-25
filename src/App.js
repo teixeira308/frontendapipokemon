@@ -9,8 +9,7 @@ import {
 } from "react-icons/ai";
 import Modal from "./components/Modal"; // Importe o componente Modal
 
-
-PAGINACAO NÃO FUNCIONANDO, REVISAR
+ 
 function App() {
   
   const [currentPage, setCurrentPage] = useState(1);
